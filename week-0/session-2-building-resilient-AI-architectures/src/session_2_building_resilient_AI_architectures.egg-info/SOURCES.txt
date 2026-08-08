@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+src/session_2_building_resilient_AI_architectures.egg-info/PKG-INFO
+src/session_2_building_resilient_AI_architectures.egg-info/SOURCES.txt
+src/session_2_building_resilient_AI_architectures.egg-info/dependency_links.txt
+src/session_2_building_resilient_AI_architectures.egg-info/top_level.txt
