@@ -26,8 +26,24 @@ class AgentProfile:
         return str(output_path)
 
 
-def create_default_profile() -> AgentProfile:
+def create_profile(
+    agent_name: str,
+    model_engine: str,
+    temperature: float,
+    max_retries: int = 3,
+    is_active: bool = True,
+) -> AgentProfile:
     return AgentProfile(
+        agent_name=agent_name,
+        model_engine=model_engine,
+        temperature=temperature,
+        max_retries=max_retries,
+        is_active=is_active,
+    )
+
+
+def create_default_profile() -> AgentProfile:
+    return create_profile(
         agent_name="DataBot_v1",
         model_engine="gpt-4-turbo",
         temperature=0.2,
